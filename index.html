@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Tony Programador</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <button class="lang-toggle" onclick="toggleLanguage()">EN</button>
+    <div>
+      <h1><span class="typing" id="typing"></span></h1>
+      <p id="hero-text">
+        Desenvolvedor em início de carreira, curioso por natureza e movido
+        por tecnologia, design e segurança. Sempre aprendendo, sempre
+        evoluindo.
+      </p>
+    </div>
+  </header>
+
+  <section class="about">
+    <h2 id="about-title">Sobre mim</h2>
+    <p id="about-text">
+      Sou formado em Análise e Desenvolvimento de Sistemas e atualmente curso
+      um MBA em Cibersegurança e Gestão de Riscos. Ainda no começo da jornada
+      profissional, acredito que consistência, estudo e projetos reais são
+      o caminho para crescer na área. Gosto de interfaces bem pensadas,
+      código organizado e soluções que façam sentido no mundo real.
+    </p>
+  </section>
+
+  <section class="skills">
+    <h2 id="skills-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill"><i data-lucide="layout"></i><br>HTML & CSS</div>
+      <div class="skill"><i data-lucide="code"></i><br>JavaScript</div>
+      <div class="skill"><i data-lucide="terminal"></i><br>Python</div>
+      <div class="skill"><i data-lucide="pen-tool"></i><br>Design Gráfico</div>
+      <div class="skill"><i data-lucide="monitor"></i><br>Front-end</div>
+      <div class="skill"><i data-lucide="shield"></i><br>Cibersegurança</div>
+    </div>
+  </section>
+
+  <section class="projects">
+    <h2 id="projects-title">Projetos</h2>
+    <div class="projects-grid">
+      <div class="project-card" onclick="toggleProject(this)">Landing Page Fazenda
+        <div class="project-extra">
+          <p>
+            Este é um site responsivo de uma empresa chamada Fazenda Mundo Novo,
+            Neste projeto coloquei em pratica meu conhecimentos em HTML, CSS e API,
+            por introduzir um mapa.
+          </p>
+          <div class="project-badges">
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+            <span class="badge alt">JavaScript</span>
+          </div>
+          <a class="project-link" href="https://github.com/seu-usuario/seu-projeto" target="_blank">
+            <i data-lucide="github"></i> Ver no GitHub
+          </a>
+        </div>
+      </div>
+      <div class="project-card" onclick="toggleProject(this)">Cifra com Python
+        <div class="project-extra">
+          <p>
+            Este projeto foi feito com o intuito de ser um case de estudos, 
+            para me familiarizar mais com a linguagem de Python e Cibersegurança,
+            neste projeto é possivel cifrar simetricamente todas as mensagens e decifra-las utilizando uma chave gerada aleatoriamente.
+          </p>
+          <div class="project-badges">
+            <span class="badge">Python</span>
+          </div>
+          <a class="project-link" href="https://github.com/seu-usuario/seu-projeto" target="_blank">
+            <i data-lucide="github"></i> Ver no GitHub
+          </a>
+        </div>
+      </div>
+      <div class="project-card" onclick="toggleProject(this)">$1
+        <div class="project-extra">
+          <p>
+            Descrição detalhada do projeto, tecnologias utilizadas,
+            aprendizados principais e desafios resolvidos durante o
+            desenvolvimento.
+          </p>
+          <div class="project-badges">
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+            <span class="badge alt">JavaScript</span>
+          </div>
+          <a class="project-link" href="https://github.com/seu-usuario/seu-projeto" target="_blank">
+            <i data-lucide="github"></i> Ver no GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2 id="contact-title">Contato</h2>
+    <div class="contact-links">
+      <a href="#"><i data-lucide="message-circle"></i> WhatsApp</a>
+      <a href="#"><i data-lucide="instagram"></i> Instagram</a>
+      <a href="#"><i data-lucide="mail"></i> E-mail</a>
+      <a href="#"><i data-lucide="github"></i> GitHub</a>
+    </div>
+  </section>
+
+  <footer id="footer-text">
+    © 2025 — Construído com curiosidade, estudo contínuo e foco no futuro.
+  </footer>
+  
+  <!-- ScrollReveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="functions.js"></script>
+
+</body>
+</html>
